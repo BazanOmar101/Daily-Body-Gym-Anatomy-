@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 3D Flip Animation Styles */
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Ensure 3D transforms work properly */
+* {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Human Body SVG Styles */
+.human-body {
+    width: 207px;
+    position: relative;
+    padding-top: 200px;
+    height: 260px;
+    display: block;
+    margin: 20px auto;
+}
+.human-body svg:hover {
+    cursor: pointer;
+}
+.human-body svg:hover path {
+    fill: #ff7d16;
+}
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+.human-body svg.head {
+    margin-left: -28.5px;
+    top: -46px;
+}
+.human-body svg.shoulder {
+    margin-left: -53.5px;
+    top: 29px;
+}
+.human-body svg.arm {
+    margin-left: -78px;
+    top: 72px;
+}
+.human-body svg.cheast {
+    margin-left: -43.5px;
+    top: 48px;
+}
+.human-body svg.stomach {
+    margin-left: -37.5px;
+    top: 90px;
+}
+.human-body svg.legs {
+    margin-left: -46.5px;
+    top: 165px;
+    z-index: 9999;
+}
+.human-body svg.hands {
+    margin-left: -102.5px;
+    top: 184px;
+}
+#area {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Courier New;
+    color: #a5a5a5;
+}
+
+#area #data {
+    color: black;
+} 
